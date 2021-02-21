@@ -38,30 +38,30 @@ Navigation bar:
 refresh-icon - แสดงสถานะหมุนถ้าเว็ปไซต์สามารถ fetch ข้อมูลได้ครบถ้วน ถ้าไม่ครบจะหยุดหมุน
 stat-icon - แสดงสถานะน้ำแต่ละ tank เหลืออยู่ ณ ปัจจุบันเป็นเปอร์เซนต์
 
-Left Column:
-  KU Smart Water - Name of this Project
-  Slogan - For entertainment only
-  Left bottom picture - If user have no idea what to drink they can watch here for recommendation. 
-                        Program will randomize the picture while open this website or having someone dispense water.
-  description - Recommendation for safety.
-  
-Left Column:
-  KU Smart Water - ไอคอนของ Project
-  Slogan - เพื่อความบันเทิง
-  รูปภาพด้านล่างซ้าย - ถ้าคนกดน้ำนึกไม่ออกว่าจะกินน้ำอะไรสามารถดูการแนะนำตรงนี้ได้
-                   โดยโปรแกรมจะทำการสุ่มครั้งแรกขณะเริ่มต้นเวปไซต์และสุ่มใหม่หลังจากมีการกดน้ำ
+Left Column: 
+  KU Smart Water - Name of this Project 
+  Slogan - For entertainment only 
+  Left bottom picture - If user have no idea what to drink so they can watch here for recommendation. Program will randomize the picture while open this website or having 
+                        someone dispense water. 
+  Description - Recommendation for safety.
+
+Left Column: 
+  KU Smart Water - ไอคอนของ Project 
+  Slogan - เพื่อความบันเทิง 
+  รูปภาพด้านล่างซ้าย - ถ้าคนกดน้ำนึกไม่ออกว่าจะกินน้ำอะไรสามารถดูการแนะนำตรงนี้ได้ โดยโปรแกรมจะทำการสุ่มครั้งแรกขณะเริ่มต้นเวปไซต์และสุ่มใหม่หลังจากมีการกดน้ำ 
   คำอธิบาย - เชิญชวนให้ป้องกันเชื้อไวรัส
 
-Fetching data every 5 seconds, This interval value close to average of dispensing water duration and don't let the server have too much load data.
-Ferching data will fetch the remaining water, Dispenser count in present and last dispensse count for hour day and week.
+Fetching data every 5 seconds, This interval value close to average of dispensing water duration and don't let the server have too much data loading. 
+Fetching data will fetch the remaining water, Dispenser count in present and last dispensse count for hour day and week.
 
-// การ Fetch จะทำทุก ๆ 5 วินาทีซึ่งจะใกล้เคียงกับค่าเฉลี่ยในการกดน้ำ 1 ครั้งและไม่ให้ Server ทำงานหนักจนเกินไป
-// การ Fetch จะทำการดึงข้อมูลน้ำที่เหลิออยู่ จำนวนการกดน้ำช่วงปัจจุบันและน้ำที่มีการกดมากที่สุดในช่วงที่ผ่านมา ได้แก่ ระดับชั่วโมง ระดับวัน และ ระดับสัปดาห์
+// การ Fetch จะทำทุก ๆ 5 วินาทีซึ่งจะใกล้เคียงกับค่าเฉลี่ยในการกดน้ำ 1 ครั้งและไม่ให้ Server ทำงานหนักจนเกินไป // การ Fetch จะทำการดึงข้อมูลน้ำที่เหลิออยู่ จำนวนการกดน้ำช่วงปัจจุบันและน้ำที่มีการกดมากที่สุดในช่วงที่ผ่านมา ได้แก่ ระดับชั่วโมง ระดับวัน และ ระดับสัปดาห์
 
-Middle Column:
-  แสดงข้อมูลการกดน้ำ ณ ปัจจุบัน ตั้งแต่เริ่มชั่วโมงใหม่จนถึงเวลาสิ้นสุดชั่วโมงนั้น โดยมีเวลากำกับไว้ด้านล่าง เมื่อเริ่มต้น
-  ชั่วโมงใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้
+Middle column: Show current dispenser count from starting new hour (XX:00) to last minute in this hour (XX:59). If start new hour the program will display the most popular   
+               drink. And have the bar to display time. 
+ 
+Middle Column: แสดงข้อมูลการกดน้ำ ณ ปัจจุบัน ตั้งแต่เริ่มชั่วโมงใหม่จนถึงเวลาสิ้นสุดชั่วโมงนั้น โดยมีเวลากำกับไว้ด้านล่าง เมื่อเริ่มต้น ชั่วโมงใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้
 
-Right Column:
-  จะแสดงผลคล้าย ๆ กับ Middle Column ก็คือ แสดงข้อมูลการกดน้ำ ณ ปัจจุบันตั้งแต่เริ่มต้นวันใหม่(เที่ยงคืน)และสัปดาห์ใหม่(วันอาทิตย์) 
-  จนถึงสิ้นสุดของช่วงเวลานั้น เมื่อเริ่มต้นใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้ 
+Right Column: Similar to the middle column. Show current dispenser count from starting new day (00:00; GMT0) and week (Sunday) to last of each time interval.
+              If start next day or next week the program will display the most popular drink to the each section.
+
+Right Column: จะแสดงผลคล้าย ๆ กับ Middle Column ก็คือ แสดงข้อมูลการกดน้ำ ณ ปัจจุบันตั้งแต่เริ่มต้นวันใหม่(เที่ยงคืน)และสัปดาห์ใหม่(วันอาทิตย์) จนถึงสิ้นสุดของช่วงเวลานั้น เมื่อเริ่มต้นใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้
