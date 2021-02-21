@@ -47,6 +47,17 @@ def updatePopular(types):
     database().update(types, "popularwater", popularwater)
     return {'result' : 'Updated successfully'}
 
+def hourStatistics():
+    timestamp = datetime.datetime.now().hour
+    time = str(datetime.time(timestamp - 1, 0, 0))
+    date = str(datetime.datetime.now().date())
+    time_stat = date + " " + time
+    payload = database().find_one("statistics")["data"]
+    payload = {
+        "water1": database().find_one("hoursPopular")["data"]["water1"],
+        "water2": database().find_one("hoursPopular")["data"]["water2"]
+    }
+    database().update("statistics", time_stat, payload)
 
 now = datetime.datetime.now()
 now_minute = 60 - now.minute
@@ -71,6 +82,7 @@ Time_sleep = now_minute*60 + now_second + now_micro*(10**-6)
 print("Sleep " + str(Time_sleep) + " second(s)")
 time.sleep(Time_sleep)
 
+
 while True:
     now = datetime.datetime.now()
     #print(now)
@@ -83,6 +95,8 @@ while True:
     print(now)
     if now.hour == 0: #Everyday
         updatePopular("dayPopular")
+        # Update data here
+        hourStatistics()
         #time.sleep(0.5)
         setZero("dayPopular")
         print("Reset dayPopular..")
