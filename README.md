@@ -41,3 +41,7 @@ drink. And have the bar to display time.
 ### Right Column: 
 Similar to the middle column. Show current dispenser count from starting new day (00:00; GMT0) and week (Sunday) to last of each time interval.
 If start next day or next week the program will display the most popular drink to the each section.
+
+
+## demo picture
+<img src="https://women.mthai.com/app/uploads/2019/08/content_HotelDelLuna41-1.jpg", alt=""IU>
