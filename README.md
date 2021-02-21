@@ -43,5 +43,19 @@ Similar to the middle column. Show current dispenser count from starting new day
 If start next day or next week the program will display the most popular drink to the each section.
 
 
-## demo picture
+## Demo picture
 ![Picture](https://github.com/Thanakrit-Mekon/exceedProject_G10/blob/main/g10.jpg?raw=true)
+
+## Group members
+Phumrapee Chaowanapricha 6210546692
+Bheem Suttipong 6210546005
+Suchon Prasert 6210545637 
+Thanakrit Mek-on 6210500129
+Phakinee Sirisukpoca 6210503748
+Sirapat Inchan 6210503888
+Thitisak Siratchatamatawin 6210503551
+Chaiyo Churngam 6210503543 
+
+
+
+
