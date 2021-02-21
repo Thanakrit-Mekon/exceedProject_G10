@@ -64,4 +64,4 @@ Middle Column: แสดงข้อมูลการกดน้ำ ณ ปั
 Right Column: Similar to the middle column. Show current dispenser count from starting new day (00:00; GMT0) and week (Sunday) to last of each time interval.
               If start next day or next week the program will display the most popular drink to the each section.
 
-Right Column: จะแสดงผลคล้าย ๆ กับ Middle Column ก็คือ แสดงข้อมูลการกดน้ำ ณ ปัจจุบันตั้งแต่เริ่มต้นวันใหม่(เที่ยงคืน)และสัปดาห์ใหม่(วันอาทิตย์) จนถึงสิ้นสุดของช่วงเวลานั้น เมื่อเริ่มต้นใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้
+Right Column: จะแสดงผลคล้าย ๆ กับ Middle Column ก็คือ แสดงข้อมูลการกดน้ำ ณ ปัจจุบันตั้งแต่เริ่มต้นวันใหม่(เที่ยงคืน)และสัปดาห์ใหม่(วันอาทิตย์) จนถึงสิ้นสุดของช่วงเวลานั้น เมื่อเริ่มต้นใหม่จะแสดงผลน้ำที่มีการกดมากที่สุดเป็นหมายเลขตู้ 
