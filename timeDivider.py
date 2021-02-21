@@ -70,7 +70,7 @@ if now_minute == 60 and now_second == 60 and now_micro == 1000000:
 
 if now_micro < 1000000: #check microsecond
     now_second -= 1
-else:
+else:hou
     now_micro = 0
 
 if now_second < 60: #check second
@@ -87,6 +87,7 @@ while True:
     now = datetime.datetime.now()
     #print(now)
     updatePopular("hoursPopular")
+    hourStatistics()
     #time.sleep(0.5)
     #now = datetime.datetime.now()
     #print(now)
@@ -96,7 +97,6 @@ while True:
     if now.hour == 0: #Everyday
         updatePopular("dayPopular")
         # Update data here
-        hourStatistics()
         #time.sleep(0.5)
         setZero("dayPopular")
         print("Reset dayPopular..")
