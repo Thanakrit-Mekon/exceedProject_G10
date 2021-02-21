@@ -1,4 +1,5 @@
 import flask
+import requests
 import json
 import datetime
 from flask_pymongo import PyMongo
@@ -116,9 +117,11 @@ def water():
                         return "good"
                 if k == "ldr1" or k == "ultrasonic1":
                     if payload["ldr1"] == 1 and payload["ultrasonic1"] == 1:
+                        database().update("lastUsage", "status1", 1)
                         print(settime(1))
                         return {"status1" : isEmpty(1), "status2" : isEmpty(2)}
-                    elif payload["ldr1"] == 0 and payload["ultrasonic1"] == 0:
+                    elif (payload["ldr1"] == 0 or payload["ultrasonic1"] == 0) and database().find_one("lastUsage")["data"]["status1"]:
+                        database().update("lastUsage", "status1", 0)
                         print(upInterval(1))
                         print(updatePopular(1))
                         return {"status1" : isEmpty(1), "status2" : isEmpty(2)}
@@ -126,9 +129,11 @@ def water():
                         return {"status" : "looking good ;)"}
                 else:
                     if payload["ldr2"] == 1 and payload["ultrasonic2"] == 1:
+                        database().update("lastUsage", "status2", 1)
                         print(settime(2))
                         return {"status1" : isEmpty(1), "status2" : isEmpty(2)}
-                    elif payload["ldr2"] == 0 and payload["ultrasonic2"] == 0:
+                    elif (payload["ldr2"] == 0 or payload["ultrasonic2"] == 0) and database().find_one("lastUsage")["data"]["status2"]:
+                        database().update("lastUsage", "status2", 0)
                         print(upInterval(2))
                         print(updatePopular(2))
                         return {"status1" : isEmpty(1), "status2" : isEmpty(2)}
