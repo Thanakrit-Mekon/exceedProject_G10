@@ -43,7 +43,22 @@ Similar to the middle column. Show current dispenser count from starting new day
 If start next day or next week the program will display the most popular drink to the each section.
 
 ## HARDWARE
+Arduino code for ultrasonic ldr led and servo controling 
 
+### ultrasonic
+An ultrasonic sensor is a type of electronic equipment that emits ultrasonic sound waves and transforms the reflected sound into an electrical signal to determine the distance of a target item and in our product, we utilize ultrasonic to detect those who attempt to press water without touching it.
+
+### led
+A light-emitting diode (LED) is a semiconductor light source that emits light when current is sent through it. Identify whether or not there is water in the tank
+
+### ldr
+An LDR (Light Dependent Resistor) is a component with a resistance that varies with the amount of light that strikes it. As a result, they may be utilized in light sensor circuits and we utilize ldr in two places: first, in the orange area to fill the water, and second, on the cup holder to inform the machine that the cup is ready for water pouring.
+
+### servomotor
+A servomotor is a rotary or linear actuator that enables precise control of angular or linear position, velocity, and acceleration.  It comprises of a suitable motor connected to a position feedback sensor.When there is a cup in the cup holder and the ultrasonic is blocked, open the tank's cover.
+
+## Demo VDO
+https://youtu.be/DgLNCGfBTYo
 
 ## Demo picture
 ![Picture](https://github.com/Thanakrit-Mekon/exceedProject_G10/blob/main/g10.jpg?raw=true)
