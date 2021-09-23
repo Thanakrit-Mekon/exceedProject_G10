@@ -42,6 +42,8 @@ drink. And have the bar to display time.
 Similar to the middle column. Show current dispenser count from starting new day (00:00; GMT0) and week (Sunday) to last of each time interval.
 If start next day or next week the program will display the most popular drink to the each section.
 
+## HARDWARE
+
 
 ## Demo picture
 ![Picture](https://github.com/Thanakrit-Mekon/exceedProject_G10/blob/main/g10.jpg?raw=true)
