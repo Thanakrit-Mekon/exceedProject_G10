@@ -57,7 +57,7 @@ An LDR (Light Dependent Resistor) is a component with a resistance that varies w
 ### servomotor
 A servomotor is a rotary or linear actuator that enables precise control of angular or linear position, velocity, and acceleration.  It comprises of a suitable motor connected to a position feedback sensor.When there is a cup in the cup holder and the ultrasonic is blocked, open the tank's cover.
 
-## Demo VDO
+## Demonstrate VDO
 https://youtu.be/DgLNCGfBTYo
 
 ## Demo picture
